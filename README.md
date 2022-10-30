@@ -25,7 +25,8 @@ import pandas as pd
 import numpy as np
 df=pd.read_csv('student_scores.csv')
 print(df)
-
+df.head()
+df.tail()
 X=df.iloc[:,:-1].values
 Y=df.iloc[:,1].values
 print(X,Y)
@@ -62,6 +63,8 @@ print('RMSE = ',rmse)
 ## Output:
 ### Initial Dataframe :
 ![op](./mx1.png)
+![op](./30a.png)
+![op](./30b.png)
 ### Assigning hours to X and scores to Y :
 ![op](./mx2.png)
 ### Training set (Hours Vs Scores) :
